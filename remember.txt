@@ -1,0 +1,11 @@
+1. module.exports = mongoose.model('Product', productSchema)
+
+- here Product is model name
+- here productSchema is schema name
+- mongoose take this model name - Product and converted it to lowercase and makes plural to define collection name
+- so here mongoose will create collection name as products in database
+
+2. mongoose does have save() method to save the document in the collection
+3. mongoose does have find() method to get all the documents from the collection
+4. findById() method to get single document by id from the collection
+5. findByIdAndRemove() method to delete single document by id from the collection
