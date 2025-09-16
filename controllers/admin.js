@@ -17,7 +17,8 @@ exports.postAddProduct = (req, res, next) => {
     title: title,
     price: price,
     description: description,
-    imageUrl: imageUrl
+    imageUrl: imageUrl,
+    userId: req.user // also can add entire user object and mongoose will pic user id automatically
   });
   product
     .save() // this save method is provided by mongoose (not define in our model)
